@@ -1,50 +1,59 @@
-$darkblue-ml: rgb(2, 2, 42);
-$lowdarkblue-ml: rgb(5, 5, 92);
-$skyblue: rgb(188, 220, 249);
+/*@media only screen and (max-width:500px){
 
-@mixin display_flex-wrap($display, $wrap) {
-    display: $display;
-    flex-wrap: $wrap;
 }
-
+@media only screen and (min-width:501px) and (max-width:960px) {
+    
+}
+@media only screen and (min-width:961)
+*/
 
 
 
 .body-style {
     color: aliceblue;
-    background-color: $darkblue-ml;
+    background-color: rgb(2, 2, 42);
 }
 
 
 
 .header-mlopez {
-    @include display_flex-wrap(flex, wrap);
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     position: sticky;
     top: 0;
     z-index: 1;
 }
 .bg-mlopez {
-    @include display_flex-wrap(flex, wrap);
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    background-color: $darkblue-ml;
+    background-color: rgb(2, 2, 42);
     border: 5px solid;
 }
 
+/**.nav-mlopez{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}**/
 
 div {
-    @include display_flex-wrap(flex, wrap);
-    nav ul li {
-        @include display_flex-wrap(flex, wrap);
-        align-items: center;
-        color: white;
-        text-decoration: overline;
-        justify-content: center;
-    }
+    display: flex;
+    flex-wrap: wrap;
 }
 
+nav ul li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+    text-decoration: overline;
+    justify-content: center;
+}
 .navbard-brand-mlopez{
-    @include display_flex-wrap(flex, wrap);
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     font-size: larger;
     color: aliceblue;
@@ -53,15 +62,13 @@ div {
     white-space: nowrap;
 }
 .navitem-mlopez {
-    @include display_flex-wrap(flex, wrap);
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     color: aliceblue;
     text-decoration: overline;
     padding: 0.5rem;
     text-wrap: nowrap;
-    &:hover {
-        background-color: $lowdarkblue-ml;
-    }
 }
 
 .dropdown-iteam-mlopez {
@@ -70,15 +77,13 @@ div {
     padding: 0.25rem;
     clear: both;
     font-weight: 400;
-    color: $darkblue-ml;
+    color: rgb(2, 2, 42);
     text-align: inherit;
     text-decoration: none;
     white-space: nowrap;
     background-color: white;
     border: 0;
-    &:hover {
-        background-color: $skyblue;
-    }
+    /*border-radius: ;*/
 }
 
 .dropdown-divider {
@@ -91,18 +96,20 @@ div {
 
 
 .text-logo {
-    @include display_flex-wrap(flex, wrap);;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: left;
     color: aliceblue;
 }
 
 .main-menu {
-    @include display_flex-wrap(flex, wrap);
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 ul li a {
-    @include display_flex-wrap(flex, wrap);
+    display: flex;
     color: aliceblue;
     text-decoration: none;
 }
@@ -112,6 +119,7 @@ ul li a {
 
 
 .menu-main {
-    @include display_flex-wrap(flex, wrap);
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
